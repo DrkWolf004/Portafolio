@@ -16,8 +16,7 @@ build :
 runs - on : ubuntu - latest
 steps :
 - uses : actions / checkout@v4
-# Si tuvieras un build ( React / Vite / etc .) , a g r g a l o
-a q u .
+# Si tuvieras un build ( React / Vite / etc .) , agregalo aqui.
 # - name : Build
 # run : npm ci && npm run build
 # Para sitio e s t t i c o simple , subimos el repo tal cual :
