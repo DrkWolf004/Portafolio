@@ -19,17 +19,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Si tuvieras un build (React, Vite, etc.), descomenta:
-      # - name: Install dependencies
-      #   run: npm ci
-      # - name: Build
-      #   run: npm run build
 
-      # Para un sitio estÃ¡tico simple, subimos el repo tal cual:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: |
+            index.html
+            assets
 
   deploy:
     environment:
