@@ -24,8 +24,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            index.html
-            assets
+            Portafolio/index.html
+            Portafolio/assets
 
   deploy:
     environment:
